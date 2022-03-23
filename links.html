@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h2>Styling Links</h2>
+        <p>Links can be styled with any CSS property (e.g. <code class="w3-codespan">color</code>, <code
+                class="w3-codespan">font-family</code>,
+            <code class="w3-codespan">background</code>, etc.).
+        </p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            hotpink<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <p>In addition, links can be styled
+            differently depending on what <strong>state</strong> they are in.</p>
+        <p>The four links states are: </p>
+        <ul>
+            <li><code class="w3-codespan">a:link</code> - a normal, unvisited link</li>
+            <li><code class="w3-codespan">a:visited</code> - a link the user has visited</li>
+            <li><code class="w3-codespan">a:hover</code> - a link when the user mouses over it</li>
+            <li><code class="w3-codespan">a:active</code> - a link the moment it is clicked</li>
+        </ul>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    <span class="commentcolor" style="color:green">/* unvisited link */</span><br>a:link <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor"
+                        style="color:green">/* visited
+                        link */</span><br>a:visited <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor"
+                        style="color:green">/* mouse over link */</span><br>
+                    a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            hotpink<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor"
+                        style="color:green">/* selected link */</span><br>a:active <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                        &nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> blue<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <p>When setting the style for several link states, there are some order rules:</p>
+        <ul>
+            <li>a:hover MUST come after a:link and a:visited</li>
+            <li>a:active MUST come after a:hover</li>
+        </ul>
+        <hr>
+        <h2>Text Decoration</h2>
+        <p>The <code class="w3-codespan">text-decoration</code> property is mostly used to remove underlines from links:
+        </p>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    a:link <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-decoration<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>a:visited <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; text-decoration<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> none<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    <br>a:hover <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;text-decoration<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> underline<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    <br>a:active <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;text-decoration<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> underline<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+
+        <h2>Background Color</h2>
+        <p>The <code class="w3-codespan">background-color</code> property can be used to specify a background color for
+            links:</p>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    a:link <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    a:visited <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            cyan<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            lightgreen<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>
+                    a:active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            hotpink<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>&nbsp;
+                </span></div>
+        </div>
+        <hr>
+
+        <h2>Link Buttons</h2>
+        <p>This example demonstrates a more advanced example where we combine several CSS properties to display links as
+            boxes/buttons:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    a:link, a:visited <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;background-color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> #f44336<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> white<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 14px 25px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> center<span class="cssdelimitercolor"
+                                style="color:black">;</span></span> <br>&nbsp;&nbsp;text-decoration<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> none<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;display<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> inline-block<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>a:hover, a:active <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+</body>
+
+</html>

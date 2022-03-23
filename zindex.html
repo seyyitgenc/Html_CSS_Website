@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Layout - The z-index</span> Property</h1>
+        <hr>
+        <p class="intro">The <code class="w3-codespan">z-index</code> property specifies the
+            stack order of an element.</p>
+        <hr>
+        <h2>The z-index Property</h2>
+        <p>When elements are positioned, they can overlap other elements.</p>
+        <p>The <code class="w3-codespan">z-index</code> property specifies the stack order of an element (which element
+            should be placed in front of, or behind, the others).</p>
+        <p>An element can have a positive or negative stack order:</p>
+        <div class="w3-example" style="position:relative;z-index:2">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    img
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;
+                        position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> absolute<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;left<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 0px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                        &nbsp;
+                        z-index<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> -1<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+
+        <p><strong>Note:</strong> <code class="w3-codespan">z-index</code> only works on positioned elements (position: absolute,
+            position: relative, position: fixed, or position: sticky) and flex items
+            (elements that are direct children of display: flex elements).</p>
+        <hr>
+        <hr>
+
+        <h2>Another z-index Example</h2>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <p>Here we see that an element with greater stack order is always above an element with a lower stack order:
+            </p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                    style="color:brown"><br>.container <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; position<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> relative<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    <br>.black-box <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; position<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> relative<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; z-index<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 2px solid black<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; height<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 100px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; margin<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            30px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>.gray-box <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;
+                        position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> absolute<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; z-index<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 3<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; background<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> lightgray<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            60px<span class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 70%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; left<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 50px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; top<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            50px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>.green-box <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; position<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            absolute<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        z-index<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 2<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; background<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> lightgreen<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 35%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; left<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 270px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; top<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            -15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        height<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            100px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="container"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="black-box"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Black box<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
+                        class<span class="attributevaluecolor" style="color:mediumblue">="gray-box"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Gray
+                box<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
+                        class="attributecolor" style="color:red"> class<span class="attributevaluecolor"
+                            style="color:mediumblue">="green-box"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Green box<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+        <hr>
+ </div>
+</body>
+
+</html>

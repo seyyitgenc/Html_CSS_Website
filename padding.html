@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-row w3-white">
+        <div class="w3-col l10 m12" id="main">
+            <h1>CSS <span class="color_h1">Padding</span></h1>
+            <hr>
+            <p class="intro">Padding is used to create space around an element's content, inside of any defined borders.
+            </p>
+            <hr>
+
+            <div class="w3-theme-border" style="width:100%;padding:70px;border-width:1px;border-style:solid;">
+                This element has a padding of 70px.
+            </div>
+            <br>
+            <hr>
+
+            <h2>CSS Padding</h2>
+            <p>The CSS <code class="w3-codespan">padding</code> properties are used to generate space around
+                an element's content, inside of any defined borders.</p>
+            <p>With CSS, you have full control over the padding. There are properties
+                for setting the padding for each side of an element (top, right, bottom, and left).</p>
+            <hr>
+
+            <h2>Padding - Individual Sides</h2>
+            <p>CSS has properties for specifying the padding for each
+                side of an element:</p>
+            <ul>
+                <li><code class="w3-codespan">padding-top</code></li>
+                <li><code class="w3-codespan">padding-right</code></li>
+                <li><code class="w3-codespan">padding-bottom</code></li>
+                <li><code class="w3-codespan">padding-left</code></li>
+            </ul>
+            <p>All the padding properties can have the following values:</p>
+            <ul>
+                <li><em>length</em> - specifies a padding in px, pt, cm, etc.</li>
+                <li><em>%</em> - specifies a padding in % of the width of the containing element</li>
+                <li>inherit - specifies that the padding should be inherited from the parent element</li>
+            </ul>
+
+            <p><b>Note:</b> Negative values are not allowed.</p>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <p>Set different padding for all four sides of a &lt;div&gt; element:&nbsp;&nbsp;</p>
+                <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp;
+                            padding-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 50px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;padding-right<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 30px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;padding-bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 50px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;padding-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 80px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span> </span></div>
+                Yourself »</a>
+            </div>
+            <hr>
+            <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                <!-- MidContent -->
+                <!-- <p class="adtext">Advertisement</p> -->
+
+                <div id="adngin-mid_content-0"></div>
+
+            </div>
+            <hr>
+
+            <h2>Padding - Shorthand Property</h2>
+            <p>To shorten the code, it is possible to specify all the padding properties in
+                one property.</p>
+            <p>The <code class="w3-codespan">padding</code> property is a shorthand property for the following
+                individual
+                padding properties:</p>
+            <ul>
+                <li><code class="w3-codespan">padding-top</code></li>
+                <li><code class="w3-codespan">padding-right</code></li>
+                <li><code class="w3-codespan">padding-bottom</code></li>
+                <li><code class="w3-codespan">padding-left</code></li>
+            </ul>
+
+            <p>So, here is how it works:</p>
+            <p>If the <code class="w3-codespan">padding</code> property has four values:</p>
+            <ul>
+                <li><b>padding: 25px 50px 75px 100px; </b>
+                    <ul>
+                        <li>top padding is 25px</li>
+                        <li>right padding is 50px</li>
+                        <li>bottom padding is 75px</li>
+                        <li>left padding is 100px</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <p>Use the padding shorthand property with four values:</p>
+                <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp;
+                            padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 25px 50px 75px 100px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            </div>
+
+            <p>If the <code class="w3-codespan">padding</code> property has three values:</p>
+            <ul>
+                <li><b>padding: 25px 50px 75px;</b>
+                    <ul>
+                        <li>top padding is 25px</li>
+                        <li>right and left paddings are 50px</li>
+                        <li>bottom padding is 75px</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <p>Use the padding shorthand property with three values:&nbsp;</p>
+                <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp;
+                            padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 25px 50px 75px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            </div>
+
+            <p>If the <code class="w3-codespan">padding</code> property has two values:</p>
+            <ul>
+                <li><b>padding: 25px 50px;</b>
+                    <ul>
+                        <li>top and bottom paddings are 25px</li>
+                        <li>right and left paddings are 50px</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <p>Use the padding shorthand property with two values:&nbsp;</p>
+                <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp;
+                            padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 25px 50px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            </div>
+
+            <p>If the <code class="w3-codespan">padding</code> property has one value:</p>
+            <ul>
+                <li><b>padding: 25px;</b>
+                    <ul>
+                        <li>all four paddings are 25px</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="w3-example">
+                <h3>Example</h3>
+                <p>Use the padding shorthand property with one value:&nbsp;</p>
+                <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                        div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp;
+                            padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 25px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+</body>
+
+</html>

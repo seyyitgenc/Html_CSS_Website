@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Layout - display: inline-block</span></h1>
+        <hr>
+        <h2>The display: inline-block Value</h2>
+        <p>Compared to <code class="w3-codespan">display: inline</code>, the major
+            difference is that <code class="w3-codespan">display: inline-block</code> allows
+            to set a width and height on the element.</p>
+        <p>Also, with <code class="w3-codespan">
+  display: inline-block</code>, the top and bottom margins/paddings are respected,
+            but with <code class="w3-codespan">display: inline</code> they are not.</p>
+        <p>Compared to <code class="w3-codespan">display: block</code>, the major
+            difference is that <code class="w3-codespan">display: inline-block</code> does
+            not add a line-break after the element, so the element can sit next to other
+            elements.</p>
+        <p>The following example shows the different behavior of <code class="w3-codespan">display: inline</code>, <code
+                class="w3-codespan">display: inline-block</code>
+            and <code class="w3-codespan">display: block</code>:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    span.a <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;display<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            inline<span class="cssdelimitercolor" style="color:black">;</span></span> <span
+                            class="commentcolor" style="color:green">/* the default for span */</span><br>&nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 100px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;height<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 100px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 5px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 1px solid blue<span class="cssdelimitercolor"
+                                style="color:black">;</span></span> <br>&nbsp;&nbsp;background-color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> yellow<span class="cssdelimitercolor"
+                                style="color:black">;</span></span> <br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>span.b <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+                        &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>
+                            inline-block<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 100px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; height<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            100px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 5px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 1px
+                            solid blue<span class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> yellow<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    span.c <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;display<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            block<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            100px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;height<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 100px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            5px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 1px solid blue<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp;
+                        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> yellow<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+        <h2>Using inline-block to Create Navigation Links</h2>
+        <p>One common use for <code class="w3-codespan">display: inline-block</code>
+            is to display list items horizontally instead of vertically. The following
+            example creates horizontal navigation links:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .nav <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span>
+                        <br>&nbsp;&nbsp;list-style-type<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            none<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            center<span class="cssdelimitercolor" style="color:black">;</span></span>&nbsp;<br>&nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; margin<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>.nav li <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;display<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            inline-block<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 20px<span
+                                class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            20px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+
+        <br>
+        <div class="w3-clear nextprev">
+        </div>
+        <div id="mypagediv2" style="position:relative;text-align:center;"></div>
+        <br>
+
+    </div>
+</body>
+
+</html>

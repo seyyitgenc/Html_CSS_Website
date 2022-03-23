@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Box Model</span></h1>
+        <hr>
+        <p class="intro">All HTML elements can be considered as boxes.</p>
+        <hr>
+
+        <h2>The CSS Box Model</h2>
+        <p>In CSS, the term "box model" is used when talking about design and layout.</p>
+        <p>The CSS box model is essentially a box that wraps around every HTML element.
+            It consists of: margins, borders, padding, and the actual content. The image below illustrates the box
+            model:</p>
+        <div class="w3-boxmodel">
+            <div class="margin">
+                <div class="border w3-theme">
+                    <div class="padding">
+                        <div class="content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Explanation of the different parts:</p>
+        <ul>
+            <li><b>Content</b> - The content of the box, where text and images appear</li>
+            <li><b>Padding</b> - Clears an area around the content. The padding is transparent</li>
+            <li><b>Border</b> - A border that goes around the padding and content</li>
+            <li><b>Margin</b> - Clears an area outside the border. The margin is
+                transparent</li>
+        </ul>
+        <p>The box model allows us to add a border around elements, and to define space
+            between elements.&nbsp;</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <p>Demonstration of the box model:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            300px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;border<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 15px solid
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 50px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 20px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+
+        </div>
+        <hr>
+
+        <h2>Width and Height of an Element</h2>
+        <p>In order to set the width and height of an element correctly in all browsers, you need to know how the box
+            model works.</p>
+
+        <div class="w3-panel w3-note">
+            <p><b>Important:</b> When you set the width and height properties of an
+                element with CSS, you just set the width and height of the <b>content area</b>. To
+                calculate the full size of an element, you must also add padding, borders and margins.</p>
+        </div>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+
+            <p>This &lt;div&gt; element will have a total width of 350px:&nbsp;</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 320px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 10px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 5px solid gray<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span>
+                        <br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+
+        <p>Here is the calculation:<br>
+        </p>
+        <div class="w3-leftbar w3-border w3-padding w3-theme-border">
+            320px (width)<br>
+            + 20px (left + right padding)<br>
+            + 10px (left + right border)<br>
+            + 0px (left + right margin)<br>
+            <strong>= 350px
+            </strong>
+        </div>
+        <p>The total width of an element should be calculated like this:</p>
+        <p>Total element width = width + left padding + right padding + left
+            border + right border + left margin + right margin</p>
+        <p>The total height of an element should be calculated like this:</p>
+        <p>Total element height = height + top padding + bottom padding + top
+            border + bottom border + top margin + bottom margin</p>
+        <hr>
+    </div>
+</body>
+
+</html>

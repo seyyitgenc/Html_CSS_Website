@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Layout - Horizontal &amp; Vertical Align</span></h1>
+        <div class="w3-dark-grey w3-padding-48 w3-display-container">
+            <span class="w3-display-topmiddle w3-hide-small" style="margin-top:16px">▲</span>
+            <span class="w3-display-bottommiddle w3-hide-small" style="margin-bottom:16px">▼</span>
+            <div class="w3-center w3-display-container"
+                style="background-color:#1abc9c;color:white; max-width:400px; margin:auto;padding: 15px">
+                <span class="w3-display-left w3-hide-small" style="left:-30px">◀</span>
+                <span class="w3-display-right w3-hide-small" style="right:-30px">►</span>
+                <h2>Center elements<br>horizontally and vertically</h2>
+            </div>
+        </div>
+        <hr>
+
+        <h2>Center Align Elements</h2>
+        <p>To horizontally center a block element (like &lt;div&gt;), use <code class="w3-codespan">margin: auto;</code>
+        </p>
+        <p>Setting the width of the element will prevent it from stretching out to the
+            edges of its container.</p>
+        <p>The element will then take up the specified width, and the remaining space
+            will be split equally between the two margins:</p>
+
+        <div style="margin:0 auto;width:50%;border:3px solid green;padding:10px;">
+            <p>This div element is centered.</p>
+        </div>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .center
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> auto<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 50%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid green<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 10px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <p><b>Note:</b> Center aligning has no effect if the <code class="w3-codespan">width</code> property is not set
+            (or set to 100%).</p>
+        <hr>
+
+        <h2>Center Align Text</h2>
+        <p>To just center the text inside an element, use <code class="w3-codespan">text-align: center;</code></p>
+
+        <div style="text-align:center;border:3px solid green">
+            <p>This text is centered.</p>
+        </div>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; text-align<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid green<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <p><strong>Tip:</strong> For more examples on how to align text, see the <a href="css_text.asp">CSS Text</a>
+            chapter.</p>
+        <hr>
+
+        <h2>Center an Image</h2>
+        <p>To center an image, set left and right margin to <code class="w3-codespan">auto</code> and make it into a
+            <code class="w3-codespan">block</code> element:
+        </p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    img
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;display<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            block<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp; margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> auto<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        margin-right<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> auto<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 40%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+
+        <h2>Left and Right Align - Using position</h2>
+        <p>One method for aligning elements is to use <code class="w3-codespan">position: absolute;</code>:</p>
+
+        <div style="position:relative;margin-bottom:180px">
+            <div style="position: absolute;right: 0px;width: 300px;border: 3px solid #73AD21;padding: 10px;">
+                <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in
+                    my mind ever since.</p>
+            </div>
+        </div>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .right
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> absolute<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        right<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 0px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 300px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span
+                                class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 10px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <p><b>Note:</b> Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>
+        <hr>
+
+        <h2>Left and Right Align - Using float</h2>
+        <p>Another method for aligning elements is to use the <code class="w3-codespan">float</code> property:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .right
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;float<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> right<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;
+                        width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 300px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 3px solid #73AD21<span
+                                class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 10px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+        <h2>The clearfix Hack</h2>
+        <div class="w3-note w3-panel">
+            <p><strong>Note:</strong> If an element is taller than the element containing it, and it is floated, it
+                will overflow outside of its container. You can use the "clearfix hack" to fix this (see example below).
+            </p>
+        </div>
+        <p>Then we can add the clearfix hack to the containing element to fix
+            this problem:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .clearfix::after <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; content<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            ""<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; clear<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> both<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> table<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+
+        <hr>
+
+        <h2>Center Vertically - Using padding</h2>
+        <p>There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom <code
+                class="w3-codespan">padding</code>:</p>
+
+        <div style="border:3px solid green;padding:70px 2px;">
+            <p>I am vertically centered.</p>
+        </div>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 70px
+                            0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;border<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 3px solid
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+
+        <p>To center both vertically and horizontally, use <code class="w3-codespan">padding</code> and <code
+                class="w3-codespan">text-align: center</code>:</p>
+
+        <div style="border:3px solid green;padding:70px 2px;;text-align:center;">
+            <p>I am vertically and horizontally centered.</p>
+        </div>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; padding<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 70px
+                            0<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;border<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 3px solid
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> center<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+
+        <h2>Center Vertically - Using line-height</h2>
+        <p>Another trick is to use the <code class="w3-codespan">line-height</code> property with a value that is equal
+            to the <code class="w3-codespan">height</code> property:</p>
+
+        <div style="line-height:200px; height:200px;border:3px solid green;text-align:center;">
+            <p style=" line-height:1.2; display:inline-block; vertical-align:middle;">I am vertically and horizontally
+                centered.</p>
+        </div>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; line-height<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            200px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;height<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 200px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px
+                            solid green<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> center<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* If the
+                        text has multiple lines, add the
+                        following: */</span><br>.center p <span class="cssdelimitercolor"
+                        style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;line-height<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            1.5<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;display<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> inline-block<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;vertical-align<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> middle<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+
+        <h2>Center Vertically - Using position &amp; transform</h2>
+        <p>If <code class="w3-codespan">padding</code> and <code class="w3-codespan">line-height</code>
+            are not options, another solution is to use positioning and the <code class="w3-codespan">transform</code>
+            property:</p>
+
+        <div style="line-height:200px; height:200px;border:3px solid green;text-align:center;">
+            <p style=" line-height:1.2; display:inline-block; vertical-align:middle;">I am vertically and horizontally
+                centered.</p>
+        </div>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"> <br>&nbsp;&nbsp;height<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            200px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;position<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> relative<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px
+                            solid green<span class="cssdelimitercolor" style="color:black">;</span></span>
+                        <br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    .center p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> absolute<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; top<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 50%<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 50%<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; transform<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> translate(-50%, -50%)<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+        </div>
+        <p><strong>Tip:</strong> You will learn more about the transform property in our 2D Transforms
+            Chapter</a>.</p>
+        <hr>
+
+        <h2>Center Vertically - Using Flexbox</h2>
+        <p>You can also use flexbox to center things. Just note that flexbox is not supported in IE10 and earlier
+            versions:</p>
+
+        <div style="display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;">
+            I am vertically and horizontally centered.
+        </div>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; display<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            flex<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        justify-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> center<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        align-items<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> center<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; height<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 200px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; border<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3px
+                            solid
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div </div>
+        </div>
+</body>
+
+</html>

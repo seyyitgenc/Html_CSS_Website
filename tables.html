@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Tables</span></h1>
+        <hr>
+        <h2>Table Borders</h2>
+        <p>To specify table borders in CSS, use the <code class="w3-codespan">border</code> property.</p>
+        <p>The example below specifies a solid border for &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements:</p>
+        <table class="blacktableborders">
+            <tbody>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    table, th, td <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>
+                        &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 1px solid<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+        </div>
+        <hr>
+        <h2>Full-Width Table</h2>
+        <p>The table above might seem small in some cases. If you need a table that should span the entire screen
+            (full-width), add <code class="w3-codespan">width: 100%</code> to the
+            &lt;table&gt; element:</p>
+        <table class="fullwidthtable" style="border: 1px solid;">
+            <tbody>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    table <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 100%<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+        </div>
+
+        <div class="w3-note w3-panel">
+            <h3>Double Borders</h3>
+            <p>Notice that the table in the examples above have double borders. This is
+                because both the table and the &lt;th&gt; and &lt;td&gt; elements have separate borders.</p>
+            <p>To remove double borders, take a look at the example below.</p>
+        </div>
+        <hr>
+
+        <h2>Collapse Table Borders</h2>
+        <p>The <code class="w3-codespan">border-collapse</code> property sets whether the table borders
+            should be collapsed into a single border:</p>
+        <table class="bordercollapsetable" style="border-collapse: collapse; border: 1px solid;">
+            <tbody>
+                <tr>
+                    <th style="height: 25px">Firstname</th>
+                    <th style="height: 25px">Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    table
+                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>
+                        &nbsp;&nbsp;border-collapse<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> collapse<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+            <a target="_blank" class="w3-btn w3-margin-bottom"
+        </div>
+
+        <p style="margin-top:25px;">If you only want a border around the table, only specify the <code
+                class="w3-codespan">border</code> property for
+            &lt;table&gt;:</p>
+        <table class="onlytableborder">
+            <tbody>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

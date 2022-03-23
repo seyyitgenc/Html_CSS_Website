@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CSS <span class="color_h1">Margins</span></h1>
+    </div>
+    <hr>
+    <p class="intro">Margins are used to create space around elements, outside of any defined borders.</p>
+    <hr>
+
+    <div class="w3-theme-border" style="border-width:1px;border-style:solid;margin:70px;padding:5px;">
+        This element has a margin of 70px.
+    </div>
+
+    <h2>CSS Margins</h2>
+    <p>The CSS <code class="w3-codespan">margin</code> properties are used to create space around elements,
+        outside of any defined borders.</p>
+    <p>With CSS, you have full control over the margins. There are properties
+        for setting the margin for each side of an element (top, right, bottom, and left).</p>
+    <hr>
+
+    <h2>Margin - Individual Sides</h2>
+    <p>CSS has properties for specifying the margin for each
+        side of an element:</p>
+    <ul>
+        <li><code class="w3-codespan">margin-top</code></li>
+        <li><code class="w3-codespan">margin-right</code></li>
+        <li><code class="w3-codespan">margin-bottom</code></li>
+        <li><code class="w3-codespan">margin-left</code></li>
+    </ul>
+    <p>All the margin properties can have the following values:</p>
+    <ul>
+        <li>auto - the browser calculates the margin</li>
+        <li><em>length</em> - specifies a margin in px, pt, cm, etc.</li>
+        <li><em>%</em> - specifies a margin in % of the width of the containing element</li>
+        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+    </ul>
+
+    <p><b>Tip:</b> Negative values are allowed.</p>
+    <div class="w3-example">
+        <h3>Example</h3>
+        <p>Set different margins for all four sides of a &lt;p&gt; element:</p>
+        <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red"><br>&nbsp;&nbsp;margin-top<span class="csspropertyvaluecolor"
+                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100px<span
+                            class="cssdelimitercolor" style="color:black">;</span></span><br>
+                    &nbsp;&nbsp;margin-bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> 100px<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>
+                    &nbsp;&nbsp;margin-right<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> 150px<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br>
+                    &nbsp;&nbsp;margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            class="cssdelimitercolor" style="color:black">:</span> 80px<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span> </span></div>
+    </div>
+    <hr>
+
+    <h2>Margin - Shorthand Property</h2>
+    <p>To shorten the code, it is possible to specify all the margin properties in
+        one property.</p>
+    <p>The <code class="w3-codespan">margin</code> property is a shorthand property for the following individual margin
+        properties:</p>
+    <ul>
+        <li><code class="w3-codespan">margin-top</code></li>
+        <li><code class="w3-codespan">margin-right</code></li>
+        <li><code class="w3-codespan">margin-bottom</code></li>
+        <li><code class="w3-codespan">margin-left</code></li>
+    </ul>
+
+    <p>So, here is how it works:</p>
+    <p>If the <code class="w3-codespan">margin</code> property has four values:</p>
+    <ul>
+        <li><b>margin: 25px 50px 75px 100px; </b>
+            <ul>
+                <li>top margin is 25px</li>
+                <li>right margin is 50px</li>
+                <li>bottom margin is 75px</li>
+                <li>left margin is 100px</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="w3-example">
+        <h3>Example</h3>
+        <p>Use the margin shorthand property with four values:</p>
+        <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red"><br>&nbsp;&nbsp;margin<span class="csspropertyvaluecolor"
+                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px 50px
+                        75px 100px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                    class="cssdelimitercolor" style="color:black">}</span> </span></div>
+    </div>
+
+    <p>If the <code class="w3-codespan">margin</code> property has three values:</p>
+    <ul>
+        <li><b>margin: 25px 50px 75px;</b>
+            <ul>
+                <li>top margin is 25px</li>
+                <li>right and left margins are 50px</li>
+                <li>bottom margin is 75px</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="w3-example">
+        <h3>Example</h3>
+        <p>Use the margin shorthand property with three values:&nbsp;</p>
+        <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red"><br>&nbsp;
+                    margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> 25px 50px 75px<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span> </span></div>
+    </div>
+
+    <p>If the <code class="w3-codespan">margin</code> property has two values:</p>
+    <ul>
+        <li><b>margin: 25px 50px;</b>
+            <ul>
+                <li>top and bottom margins are 25px</li>
+                <li>right and left margins are 50px</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="w3-example">
+        <h3>Example</h3>
+        <p>Use the margin shorthand property with two values:&nbsp;</p>
+        <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                    style="color:red"><br>&nbsp;
+                    margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                            style="color:black">:</span> 25px 50px<span class="cssdelimitercolor"
+                            style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                    style="color:black">}</span> </span></div>
+    </div>
+    <p>If the <code class="w3-codespan">margin</code> property has one value:</p>
+    <ul>
+        <li><b>margin: 25px;</b>
+            <ul>
+                <li>all four margins are 25px</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="w3-example">
+    </div>
+</body>
+
+</html>

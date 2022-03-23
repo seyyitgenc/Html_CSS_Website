@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Layout - float and clear</span></h1>
+        <hr>
+        <p class="intro">The CSS <code class="w3-codespan">float</code> property specifies
+            how an element should float.</p>
+        <p class="intro">The CSS <code class="w3-codespan">clear</code> property
+            specifies what elements can float beside the cleared element and on which side.</p>
+
+        <div style="background-color:#2196F3;padding:16px;float:left;width:30%;opacity:0.85;text-align:center;">
+            <span class="floatl"></span>
+        </div>
+        <div style="background-color:#F44336;padding:16px;float:right;width:30%;opacity:0.85;text-align:center;">
+            <span class="floatr"></span>
+        </div>
+        <br>
+        <hr style="clear:both;margin-bottom:15px;margin-top:32px">
+
+        <h2>The float Property</h2>
+        <p>The <code class="w3-codespan">float</code> property is used for
+            positioning and formatting content e.g. let an image float left to the text in a
+            container.</p>
+        <p>The <code class="w3-codespan">float</code> property can have one of the
+            following values:</p>
+        <ul>
+            <li> <code class="w3-codespan">left</code> - The element floats to the left of its container</li>
+            <li> <code class="w3-codespan">right</code> - The element floats to the right of its container</li>
+            <li> <code class="w3-codespan">none</code> - The element does not float (will be displayed just where it
+                occurs in the text). This is default</li>
+            <li> <code class="w3-codespan">inherit</code> - The element inherits the float value of its parent</li>
+        </ul>
+        <p>In its simplest use, the <code class="w3-codespan">float</code> property can be used to wrap text around
+            images.</p>
+        <hr>
+
+        <h2>Example - float: right;</h2>
+        <p>The following example specifies that an image should float to the <strong>right</strong> in a text:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            right<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+        <hr>
+
+        <h2>Example - float: left;</h2>
+        <p>The following example specifies that an image should float to the <strong>left</strong> in a text:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            left<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+
+        <h2>Example - No float</h2>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    img <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+        <h2>Example - Float Next To Each Other</h2>
+        <p>Normally div elements will be displayed on top of each other. However, if we
+            use <code class="w3-codespan">float: left</code> we can let elements float next to each other:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            left<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> 15px<span
+                                class="cssdelimitercolor" style="color:black">;</span></span> <br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>.div1 <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;
+                        background<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> red<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>.div2 <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>.div3 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

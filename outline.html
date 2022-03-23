@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Outline</span></h1>
+        <p class="intro">An outline is a line drawn outside the element's border.</p>
+        <hr>
+
+        <div
+            style="width:98%;border:2px solid black;outline:#04AA6D solid 10px;padding:20px;margin:auto;text-align:center">
+            This element has a black border and a green outline with a width of 10px.
+        </div>
+        <br>
+
+        <h2>CSS Outline</h2>
+        <p>An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".</p>
+        <div class="w3-boxmodel">
+            <div class="outline w3-theme">
+                <div class="border">
+                    <div class="content"></div>
+                </div>
+            </div>
+        </div>
+
+        <p>CSS has the following outline properties:</p>
+        <ul>
+            <li> <code class="w3-codespan">outline-style</code></li>
+            <li> <code class="w3-codespan">outline-color</code></li>
+            <li> <code class="w3-codespan">outline-width</code></li>
+            <li> <code class="w3-codespan">outline-offset</code></li>
+            <li> <code class="w3-codespan">outline</code></li>
+        </ul>
+
+        <div class="w3-panel w3-note">
+            <p><b>Note:</b> Outline differs from borders! Unlike border, the outline is
+                drawn outside the element's border, and may overlap other content. Also, the outline is
+                NOT a part of the element's dimensions; the element's total width and height
+                is not affected by the width of the outline.</p>
+        </div>
+        <hr>
+
+        <h2>CSS Outline Style</h2>
+        <p>The <code class="w3-codespan">outline-style</code> property specifies the style of the outline,
+            and can have one of the following values:</p>
+        <ul>
+            <li><code class="w3-codespan">dotted</code> - Defines a dotted outline</li>
+            <li><code class="w3-codespan">dashed</code> - Defines a dashed outline</li>
+            <li><code class="w3-codespan">solid</code> - Defines a solid outline</li>
+            <li><code class="w3-codespan">double</code> - Defines a double outline</li>
+            <li><code class="w3-codespan">groove</code> - Defines a 3D grooved outline</li>
+            <li><code class="w3-codespan">ridge</code> - Defines a 3D ridged outline</li>
+            <li><code class="w3-codespan">inset</code> - Defines a 3D inset outline</li>
+            <li><code class="w3-codespan">outset</code> - Defines a 3D outset outline</li>
+            <li><code class="w3-codespan">none</code> - Defines no outline</li>
+            <li><code class="w3-codespan">hidden</code> - Defines a hidden outline</li>
+        </ul>
+
+        <p>The following example shows the different <code class="w3-codespan">outline-style</code> values:</p>
+
+        <div class="w3-example">
+            <h3>Example</h3>
+            <p>Demonstration of the different outline styles:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.dotted <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">outline-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            dotted<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    p.dashed <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">outline-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            dashed<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>p.solid <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">outline-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            solid<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    p.double <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">outline-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            double<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>p.groove <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">outline-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            groove<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    p.ridge <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">outline-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            ridge<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>p.inset <span
+                        class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">outline-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            inset<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    p.outset <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">outline-style<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            outset<span class="cssdelimitercolor" style="color:black">;</span></span></span><span
+                        class="cssdelimitercolor" style="color:black">}</span>
+                </span></div>
+            <p>Result:</p>
+            <div class="w3-white w3-padding notranslate">
+
+                <p style="outline-style:dotted;outline-color:red;padding:2px 4px">A dotted outline.</p>
+                <p style="outline-style:dashed;outline-color:red;padding:2px 4px">A dashed outline.</p>
+                <p style="outline-style:solid;outline-color:red;padding:2px 4px">A solid outline.</p>
+                <p style="outline-style:double;outline-color:red;padding:2px 4px">A double outline.</p>
+                <p style="outline-style:groove;outline-color:red;padding:2px 4px">A groove outline. The effect depends
+                    on the outline-color value.</p>
+                <p style="outline-style:ridge;outline-color:red;padding:2px 4px">A ridge outline. The effect depends on
+                    the outline-color value.</p>
+                <p style="outline-style:inset;outline-color:red;padding:2px 4px">An inset outline. The effect depends on
+                    the outline-color value.</p>
+                <p style="outline-style:outset;outline-color:red;padding:2px 4px">An outset outline. The effect depends
+                    on the outline-color value.</p>
+            </div>
+        </div>
+
+
+        <div class="w3-panel w3-note">
+            <p><b>Note:</b> None of the other outline properties (which you will learn more about in the next chapters)
+                will have ANY effect unless the
+                <code class="w3-codespan">outline-style</code> property is set!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

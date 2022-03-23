@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Layout - width and max-width</span></h1>
+        <hr>
+        <h2>Using width, max-width and margin: auto;</h2>
+        <p>As mentioned in the previous chapter; a block-level element always takes up the full width available
+            (stretches out to the left and right as far as it can).</p>
+        <p>Setting the <code class="w3-codespan">width</code> of a block-level element will prevent it from stretching
+            out to the edges of its container. Then, you can set the
+            margins to auto, to horizontally center the element within its container. The
+            element will take up the specified width, and the remaining space will be split
+            equally between the two margins:</p>
+
+        <div class="w3-theme-border" style="border-width:3px;border-style:solid;width:500px; margin: auto;">
+            This &lt;div&gt; element has a width of 500px, and margin set to auto.</div>
+        <br>
+
+        <p><strong>Note:</strong> The problem with the <code class="w3-codespan">&lt;div&gt;</code> above occurs when
+            the browser window is
+            smaller than the width of
+            the element. The browser then adds a horizontal scrollbar to the page.</p>
+
+        <p>Using <code class="w3-codespan">max-width</code> instead, in this situation, will improve the
+            browser's handling of small windows. This is important when making a site usable
+            on small devices:</p>
+
+        <div class="w3-theme-border" style="border-width:3px;border-style:solid; max-width:500px; margin: auto;">
+            This &lt;div&gt; element has a max-width of 500px, and margin set to auto.</div>
+        <br>
+        <p><strong>Tip:</strong> Resize the browser window to less than 500px wide, to see the difference between
+            the two divs!</p>
+
+        <p>Here is an example of the two divs above:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    div.ex1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp;&nbsp;width<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            500px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;margin<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            auto<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;&nbsp;border<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br>
+                    <br>div.ex2 <span class="cssdelimitercolor" style="color:black">{</span><span
+                        class="csspropertycolor" style="color:red"><br>&nbsp; max-width<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 500px<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp;
+                        margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> auto<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> 3px solid #73AD21<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+        </div>
+    </div>
+</body>
+
+</html>

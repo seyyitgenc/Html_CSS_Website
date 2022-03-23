@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Text</span></h1>
+
+        <hr>
+        <p class="intro">CSS has a lot of properties for formatting text.</p>
+        <hr>
+
+        <div style="margin:auto;border:1px solid gray;padding:8px;">
+            <h1 style="text-align:center;text-transform:uppercase;color:#04AA6D;">text formatting</h1>
+            <p style="text-indent:50px;text-align:justify;letter-spacing:3px;">This text is styled with some of the text
+                formatting properties. The heading uses the text-align, text-transform, and color properties.
+                The paragraph is indented, aligned, and the space between characters is specified. The underline is
+                removed from this colored
+                <a style="text-decoration:none;color:#008CBA;" target="_blank" </p>
+        </div>
+        <br>
+        <hr>
+
+        <h2>Text Color</h2>
+        <p>The <code class="w3-codespan">color</code> property is used to set the color of the text.
+            The color is specified by:</p>
+        <ul>
+            <li>a color name - like "red"</li>
+            <li>a HEX value - like "#ff0000"</li>
+            <li>an RGB value - like "rgb(255,0,0)"</li>
+        </ul>
+        <p>Look at CSS Color Values for a complete list of possible color
+            values.</p>
+        <p>The default text color for a page is defined in the body selector.</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            blue<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            green<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+        <hr>
+
+        <h2>Text Color and Background Color</h2>
+        <p>In this example, we define both the <code class="w3-codespan">background-color</code> property and the <code
+                class="w3-codespan">color</code> property:</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            lightgrey<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> blue<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br>
+                    <br>h1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                        color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span> white<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span><br><br>
+                    div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            blue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> white<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+        </div>
+        <div class="w3-panel w3-note">
+            <p><strong>Important:</strong> High contrast is very important for people with
+                vision problems. So, always ensure that the contrast
+                between the text color and the background color (or background image) is good!</p>
+        </div>
+        <hr>
+
+    </div>
+</body>
+
+</html>

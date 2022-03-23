@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-col l10 m12" id="main">
+        <h1>CSS <span class="color_h1">Fonts</span></h1>
+        <p class="intro">Choosing the right font for your website is important!</p>
+        <hr>
+
+        <h2>Font Selection is Important</h2>
+        <p>Choosing the right font has a huge impact on how the readers experience a
+            website.</p>
+        <p>The right font can create a strong identity for your brand.</p>
+        <p>Using a font that is easy to read is important. The font adds
+            value to your text. It is also important to choose the correct color and text size
+            for the font.</p>
+        <hr>
+
+        <h2>Generic Font Families</h2>
+        <p>In CSS there are five generic font families:</p>
+        <ol>
+            <li><strong>Serif</strong> fonts have a small stroke at the edges of each letter. They create a sense of
+                formality and elegance.</li>
+            <li><strong>Sans-serif</strong> fonts have clean lines (no small strokes attached). They create a modern and
+                minimalistic look.</li>
+            <li><strong>Monospace</strong> fonts - here all the letters have the same fixed width. They create a
+                mechanical look.&nbsp;</li>
+            <li><strong>Cursive</strong> fonts imitate human handwriting.</li>
+            <li><strong>Fantasy</strong> fonts are decorative/playful fonts.</li>
+        </ol>
+        <p>All the different font names belong to one of the generic font families.&nbsp;</p>
+        <hr>
+
+        <h2>Difference Between Serif and Sans-serif Fonts</h2>
+        <img alt="Serif vs. Sans-serif" src="serif.gif" width="398" height="142" style="max-width:100%;height:auto">
+        <div class="w3-panel w3-note">
+            <p><strong>Note:</strong> On computer screens, sans-serif fonts are considered easier to read than serif
+                fonts.</p>
+        </div>
+        <hr>
+
+        <h2>Some Font Examples</h2>
+        <table class="ws-table-all notranslate">
+            <tbody>
+                <tr>
+                    <th style="width:20%">Generic Font Family</th>
+                    <th style="width:30%">Examples of Font Names</th>
+                </tr>
+                <tr>
+                    <td>Serif</td>
+                    <td><span style="font-size:150%;font-family:'Times New Roman',serif">Times New Roman</span><br>
+                        <span style="font-size:150%;font-family:Georgia,serif">Georgia</span><br>
+                        <span style="font-size:150%;font-family:Garamond,serif">Garamond</span><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sans-serif</td>
+                    <td><span style="font-size:150%;font-family:Arial,sans-serif">Arial</span><br>
+                        <span style="font-size:150%;font-family:Verdana,sans-serif">Verdana</span><br>
+                        <span style="font-size:150%;font-family:Helvetica,sans-serif">Helvetica</span><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Monospace</td>
+                    <td><span style="font-size:150%;font-family:'Courier New',monospace">Courier New</span><br>
+                        <span style="font-size:150%;font-family:'Lucida Console',monospace">Lucida Console</span><br>
+                        <span style="font-size:150%;font-family:Monaco,monospace">Monaco</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cursive</td>
+                    <td><span style="font-size:150%;font-family:'Brush Script MT',cursive">Brush Script MT</span><br>
+                        <span style="font-size:150%;font-family:'Lucida Handwriting',cursive">Lucida
+                            Handwriting</span><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fantasy</td>
+                    <td><span style="font-size:150%;font-family:Copperplate,fantasy">Copperplate</span><br>
+                        <span style="font-size:150%;font-family:Papyrus,fantasy">Papyrus</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>The CSS font-family Property</h2>
+        <p>In CSS, we use the <code class="w3-codespan">font-family</code> property to specify the font of a text.</p>
+
+        <div class="w3-note w3-panel">
+            <p><b>Note</b>: If the font name is more than one word, it must be in quotation marks, like: "Times New
+                Roman".</p>
+        </div>
+
+        <p><strong>Tip:</strong> The <code class="w3-codespan">font-family</code> property should hold several font
+            names as a "fallback" system,
+            to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end
+            with a generic family
+            (to let the
+            browser pick a similar font in the generic family, if no other fonts are
+            available). The font names should be separated with comma. Read more about
+            fallback fonts in the</p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <p>Specify some different fonts for three paragraphs:</p>
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    .p1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> "Times
+                            New Roman", Times, serif<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>
+                    .p2 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> Arial,
+                            Helvetica, sans-serif<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span><br><br>
+                    .p3 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; font-family<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                            "Lucida Console", "Courier New", monospace<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span></div>
+        </div>
+    </div>
+</body>
+
+</html>
